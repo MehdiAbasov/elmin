@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0.9;
+    height: 100vh;
+    background-color: #252525;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+.social-icons a {
+    font-size: 20px;
+    color: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    text-align: center;
+    color: #1c315e !important;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar {
+    z-index: 9000;
+    position: sticky;
+    top: 0;
+    background-color: #1c315e;
+    border-bottom: 3px solid orange;
+}
+.Navbar .Navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+.nav-links a {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.social-icon a {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    .menu-icon {
+        display: flex;
+    }
+    .Navbar-container .nav-links {
+        display: none !important;
+    }
+    .social-icon {
+        display: none;
+    }
+    .about-us {
+        padding: 0px 0 !important;
+    }
+    .drag-siper-slide img{
+        height: 300px !important;
+    }
+
+    .Footer .row .col-md-4 {
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+}
+
+.about-us {
+    padding: 50px 0;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-us .left-side .l-top p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.l-top span {
+    padding-left: 10px;
+    border-left: 6px solid #1c315e;
+    font-size: 35px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttons a {
+    text-decoration: none;
+    width: 150px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    background-color: #1c315e;
+    border-radius: 25px;
+    font-size: 19px;
+}
+
+.videolar{
+    padding: 50px 0;
+}
+
+#videolar{
+    margin-top: 30px;
+}
+.buttons a:nth-child(2){
+    background-color: #fff;
+    color: #1c315e;
+}
+
+.right-side img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.telebeler{
+    background-color: #1c315e;
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+}
+
+.t-say .col-md-4{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 22px;
+}
+
+.reyler{
+   padding: 50px 0;
+   margin: 30px 0; 
+}
+
+#rəylər{
+    margin-top: 20px;
+}
+
+.Swiper-Slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1c315e;
+    height: 250px;
+    border-radius: 10px;
+    padding: 0 40px;
+}
+
+.rey-metni{
+    overflow-y: auto;
+    height: 180px;
+}
+
+#qalereya{
+    margin-top: 30px;
+}
+
+.fotolar{
+    padding: 40px 0;
+}
+
+.drag-siper-slide img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.Footer{
+    border-top: 4px solid orange;
+    background-color: #1c315e;
+}
+
+.Footer .row{
+    padding: 50px 0;
+}
+
+.Footer .row .col-md-4 a{
+    font-size: 20px;
+    color: #fff;
+}
+
+.submit{
+    width: 100%;
+    padding: 6px !important;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    color: #fff;
+    font-size: 19px;
+    border-top: 2px solid orange;
+}
+
+.Footer .logo{
+    font-size: 26px;
+}
+
+.footer-bottom a{
+    color: #fff;
 }
