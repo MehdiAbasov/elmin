@@ -64,7 +64,6 @@ function App() {
   };
   return (
     <>
-      <title>Elmin Agayev</title>
       <meta name="keywords" content="elmin agayev, Elmin, elmin, az-dili dersleri, ders, azerbaycan, azerbaycan-dili, azerbaycan dili"></meta>
       <div className='overlay' onClick={closeOverlay} ref={overlayRef}>
         <span className='xmark' ref={xmark} onClick={closeOverlay}><HiXMark /></span>
@@ -140,7 +139,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className='container'>
         <h2 id='rəylər'>Reyler</h2>
         <div className='reyler'>
