@@ -140,27 +140,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='telebeler'>
-        <div className='container'>
-          <div className="row t-say">
-            <div className='col-md-4'>
-              <h4>Tələbələrim</h4>
-              <CountUp end={100}
-                duration={7} />
-            </div>
-            <div className='col-md-4'>
-              {/* <h4>Qəbul Olmuş Tələbə</h4>
-              <CountUp end={90}
-                duration={7} /> */}
-            </div>
-            <div className='col-md-4'>
-              <h4>Uğurlarım</h4>
-              <CountUp end={23}
-                duration={7} />
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className='container'>
         <h2 id='rəylər'>Reyler</h2>
         <div className='reyler'>
